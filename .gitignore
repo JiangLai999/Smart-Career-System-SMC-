@@ -1,0 +1,43 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+*.log
+
+# Node.js / Frontend
+frontend/node_modules/
+frontend/dist-user/
+frontend/dist-company/
+frontend/dist-admin/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# Database dumps (contain sensitive data)
+*.sql
+!database-init.sql
+
+# Generated docs
+论文核心代码示例.docx
+
+# Temporary files
+*.tmp
+*.bak

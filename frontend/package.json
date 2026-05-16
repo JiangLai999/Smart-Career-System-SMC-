@@ -1,0 +1,33 @@
+{
+  "name": "smart-career-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:user": "vite --config vite.config.user.js",
+    "dev:company": "vite --config vite.config.company.js",
+    "dev:admin": "vite --config vite.config.admin.js",
+    "dev:all": "concurrently -n \"user,company,admin\" -c \"blue,green,red\" \"npm run dev:user\" \"npm run dev:company\" \"npm run dev:admin\"",
+    "build": "vite build",
+    "build:user": "vite build --config vite.config.user.js",
+    "build:company": "vite build --config vite.config.company.js",
+    "build:admin": "vite build --config vite.config.admin.js",
+    "build:all": "npm run build:user && npm run build:company && npm run build:admin",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.0"
+  }
+}
